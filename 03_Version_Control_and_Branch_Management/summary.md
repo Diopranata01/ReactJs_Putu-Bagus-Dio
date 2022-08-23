@@ -16,7 +16,7 @@ tersambung git.
 1. Sama seperti Github, git dapat menambahkan hingga melakukan versioning control secara lokal meskipun tidak
 terhubung dengan Github
 
-### b. Pada Git tersambung dengan Github
+### c. Pada Git tersambung dengan Github
 1. Pembuatan Repository sangat dipermudah dengan terhubungnya Git dan Github, dapat menambahkan isi dari Repository
 melalui lokal Git, kemudian mengubah, menambahkan workspace (branch) baru untuk development, hingga menyatukan
 kembali workspace (branch) menggunakan CLI dengan prompt "git <add>" hingga "git <merge> <branch>".
@@ -28,6 +28,9 @@ branch akan di satukan dengan development 1, dan development 2, setelah melakuka
 
 Berikut kode hasil dari praktikum .
 [..]
+
+Berikut link Repository .
+https://github.com/Diopranata01/newPortof_Web / https://github.com/Diopranata01/newPortof_Web.git
 
 Hasil Task dapat dilihat pada .
 ![Screenshot](./screenshot/Screen_Shot.jpeg)
