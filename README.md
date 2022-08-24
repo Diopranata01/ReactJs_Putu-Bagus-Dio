@@ -1,4 +1,5 @@
-#react_Putu-Bagus-Dio-Pranata
+# React_Putu-Bagus-Dio-Pranata
 
-Hello My Name is Bagus Dio, 
-I <3 :pizza: 
+# Hello My Name is Bagus Dio, 
+## Kelas B, React JS
+## I <3 :pizza: 
