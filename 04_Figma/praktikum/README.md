@@ -3,16 +3,16 @@
 ## Soal Lakukan analisis untuk contoh kode figma
 
 ### 1. Button, dari design diatas silahkan tentukan
-    ### a. Warna dalam satuan Rgb
-    ### b. Shadow
-    ### c. Background
-    ### d. Box-shadow
-    ### e. Border-radius
+### a. Warna dalam satuan Rgb
+### b. Shadow
+### c. Background
+### d. Box-shadow
+### e. Border-radius
 
 ### 2. Dari Ukuran Card, tentukan
-    ### a. Width
-    ### b. Height
-    ### c. Radius
+### a. Width
+### b. Height
+### c. Radius
 
 
 ## Jawaban
