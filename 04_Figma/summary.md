@@ -10,25 +10,27 @@ Pada materi ini, mempelajari tentang beberapa hal berikut :
 ### a. Di awali dengan menggunakan framework dan memilih atau membuat ukuran untuk sketch
 sesuai keinginan.
 
-### b. Dilanjutkan dengan komponen lainnya yang diinginkan, kemudian dapat di ubah, di atur,
-serta 
+### b. Dilanjutkan dengan komponen lainnya yang diinginkan, kemudian dapat di ubah, di atur serta, dapat dijadikan beberapa komponen sesuai yang di inginkan.
 
-
-### c. Pada Git tersambung dengan Github
-1. Pembuatan Repository sangat dipermudah dengan terhubungnya Git dan Github, dapat menambahkan isi dari Repository
-melalui lokal Git, kemudian mengubah, menambahkan workspace (branch) baru untuk development, hingga menyatukan
-kembali workspace (branch) menggunakan CLI dengan prompt "git <add>" hingga "git <merge> <branch>".
+### c. Pembuatan sebuah elemen, memiliki banyak fitur, dimana antara componen berupa shape, ataupun frame, memiliki perbedaan nya masing - masing. Masing - masing komponen dapat disesuaikan seperti jenis background, warna background, kemudian di imbuhkan componen lain seperti text, text dapat di ubah bentuk, font, warna, hingga baris.
 
 ## Task 
-### Membuat Repository Baru Github & Mini Project
-1. Membuat Repository, kemudian master branch, development, development 1, hingga development 2 branch, dimana development
-branch akan di satukan dengan development 1, dan development 2, setelah melakukan perubahan pada masing"branch.
+### Melakukan analisis untuk contoh kode figma
+1. Menganalisis componen "button" yang terdapat pada link, dimana terdapat beberapa bagian lain yang di analisis, yaitu :
+a. Warna Dalam Satuan RGB.
+b. Shadow
+c. Background
+d. Box-shadow
+e. Border-radius
+
+2. Melakukan analisis pada Komponen Card, dan beberapa komponen didalamnya seperti
+berikut :
+a. Widht
+b. Height
+c. Radius
 
 Berikut kode hasil dari praktikum .
 [..]
-
-Berikut link Repository .
-https://github.com/Diopranata01/newPortof_Web / https://github.com/Diopranata01/newPortof_Web.git
 
 Hasil Task dapat dilihat pada .
 ![Screenshot](./screenshot/Screen_Shot.jpeg)
