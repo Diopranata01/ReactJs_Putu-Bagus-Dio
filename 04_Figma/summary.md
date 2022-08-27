@@ -34,4 +34,5 @@ Hasil Task dapat dilihat pada .
 ![Screenshot](./screenshot/Screenshot_Border_Radius.png)
 ![Screenshot](./screenshot/Screenshot_Box_Shadow.png)
 ![Screenshot](./screenshot/Screenshot_Button_Rgb_Color.png)
-![Screenshot](./screenshot/Screenshot_Box_Width_Height_Radius.png)
+![Screenshot](./screenshot/Screenshot_Shadow_Button.png)
+![Screenshot](./screenshot/Screenshot_Width_Height_Radius.png)
