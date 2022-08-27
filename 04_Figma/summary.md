@@ -28,7 +28,8 @@ a. Widht
 b. Height
 c. Radius
 
-Hasil Task dapat dilihat pada .
+Hasil Task dapat dilihat pada 
+[..]
 ![Screenshot](./screenshot/Screenshot_Background_Button.png)
 ![Screenshot](./screenshot/Screenshot_Border_Radius.png)
 ![Screenshot](./screenshot/Screenshot_Box_Shadow.png)
