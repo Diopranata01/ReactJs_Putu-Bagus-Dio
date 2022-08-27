@@ -7,8 +7,7 @@ Pada materi ini, mempelajari tentang beberapa hal berikut :
 3. Pengenalan component, grouping, dan implementasi
 
 ### Proses Pembuatan Elemen pada Figma
-### a. Di awali dengan menggunakan framework dan memilih atau membuat ukuran untuk sketch
-sesuai keinginan.
+### a. Di awali dengan menggunakan framework dan memilih atau membuat ukuran untuk sketch sesuai keinginan.
 
 ### b. Dilanjutkan dengan komponen lainnya yang diinginkan, kemudian dapat di ubah, di atur serta, dapat dijadikan beberapa komponen sesuai yang di inginkan.
 
