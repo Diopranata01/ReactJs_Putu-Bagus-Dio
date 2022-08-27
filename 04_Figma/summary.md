@@ -29,9 +29,9 @@ a. Widht
 b. Height
 c. Radius
 
-Berikut kode hasil dari praktikum .
-[..]
-
 Hasil Task dapat dilihat pada .
-![Screenshot](./screenshot/Screen_Shot.jpeg)
-![Screenshot](./screenshot/Screen_Shot_2.jpeg)
+![Screenshot](./screenshot/Screenshot_Background_Button.png)
+![Screenshot](./screenshot/Screenshot_Border_Radius.png)
+![Screenshot](./screenshot/Screenshot_Box_Shadow.png)
+![Screenshot](./screenshot/Screenshot_Button_Rgb_Color.png)
+![Screenshot](./screenshot/Screenshot_Box_Width_Height_Radius.png)
