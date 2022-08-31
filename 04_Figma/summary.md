@@ -1,38 +1,23 @@
-# Figma
+# KM React - Version Control and Branch Management (GIT)
 
 ## Resume
 Pada materi ini, mempelajari tentang beberapa hal berikut :
-1. Pengenalan kepada Tools Figma
-2. Penggunaan dan implementasi Figma dalam css
-3. Pengenalan component, grouping, dan implementasi
+1. Pengenalan serta fundamental dalam HTML
+2. Penggunaan dan implementasi HTML
+3. Srtuktur utama dalam file HTML
 
-### Proses Pembuatan Elemen pada Figma
-### a. Di awali dengan menggunakan framework dan memilih atau membuat ukuran untuk sketch sesuai keinginan.
+### HTML
+### 
+1. Dalam pembuatan file HTML, terdapat beberapa struktur utama yang disebut HTML tag, berfungsi sebagai aturan awal pada penulisan HTML 5.
+2. Kemudian 5 tag tersebut ialah DOCTYPE, tag HTML, kemudian tag Head sebagai informasi dalam file, dan tag Body, serta tag Div, dan tag Heading.
+3. Terdapat elemen lain dalam HTML, seperti list serta unordered list
 
-### b. Dilanjutkan dengan komponen lainnya yang diinginkan, kemudian dapat di ubah, di atur serta, dapat dijadikan beberapa komponen sesuai yang di inginkan.
-
-### c. Pembuatan sebuah elemen, memiliki banyak fitur, dimana antara componen berupa shape, ataupun frame, memiliki perbedaan nya masing - masing. Masing - masing komponen dapat disesuaikan seperti jenis background, warna background, kemudian di imbuhkan componen lain seperti text, text dapat di ubah bentuk, font, warna, hingga baris.
 
 ## Task 
-### Melakukan analisis untuk contoh kode figma
-1. Menganalisis componen "button" yang terdapat pada link, dimana terdapat beberapa bagian lain yang di analisis, yaitu :
-a. Warna Dalam Satuan RGB.
-b. Shadow
-c. Background
-d. Box-shadow
-e. Border-radius
+### Membuat Repository Baru Github & Mini Project
+1. Membuat web site sesuai arahan pada task yang ada, yaitu membuat 3 buah page halaman, dimana tiap page atau halamanya berisikan beberapa konten, mencakup tag HTML yang disebutkan diatas tadi, serta kegunaanya masing - masing.
 
-2. Melakukan analisis pada Komponen Card, dan beberapa komponen didalamnya seperti
-berikut :
-a. Widht
-b. Height
-c. Radius
-
-Hasil Task dapat dilihat pada 
-[..]
-![Screenshot](./screenshot/Screenshot_Background_Button.png)
-![Screenshot](./screenshot/Screenshot_Border_Radius.png)
-![Screenshot](./screenshot/Screenshot_Box_Shadow.png)
-![Screenshot](./screenshot/Screenshot_Button_Rgb_Color.png)
-![Screenshot](./screenshot/Screenshot_Shadow_Button.png)
-![Screenshot](./screenshot/Screenshot_Width_Height_Radius.png)
+Hasil Task dapat dilihat pada .
+![Screenshot](./screenshot/index-html-screenshot.png)
+![Screenshot](./screenshot/form-html-screenshot.png)
+![Screenshot](./screenshot/welcome-html-screenshot.png)
