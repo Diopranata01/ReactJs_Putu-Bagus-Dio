@@ -2,22 +2,36 @@
 
 ## Resume
 Pada materi ini, mempelajari tentang beberapa hal berikut :
-1. Pengenalan serta fundamental dalam HTML
-2. Penggunaan dan implementasi HTML
-3. Srtuktur utama dalam file HTML
+1. Pengenalan serta fundamental dalam Versioning Control
+2. Penggunaan dan implementasi Git
+3. Penggunaan dan implementasi Github
 
-### HTML
-### 
-1. Dalam pembuatan file HTML, terdapat beberapa struktur utama yang disebut HTML tag, berfungsi sebagai aturan awal pada penulisan HTML 5.
-2. Kemudian 5 tag tersebut ialah DOCTYPE, tag HTML, kemudian tag Head sebagai informasi dalam file, dan tag Body, serta tag Div, dan tag Heading.
-3. Terdapat elemen lain dalam HTML, seperti list serta unordered list
+### Proses Versioning Control
+### a. Pada Github
+1. Pengguna dapat langsung membuat repository pada laman web Github.com, kemudian dapat memilih untuk menghubungkan
+repository dengan Git pada lokal atau tidak, kemudian dapat menambah file yang diinginkan, hingga mengeditnya tanpa
+tersambung git.
 
+### b. Pada Git
+1. Sama seperti Github, git dapat menambahkan hingga melakukan versioning control secara lokal meskipun tidak
+terhubung dengan Github
+
+### c. Pada Git tersambung dengan Github
+1. Pembuatan Repository sangat dipermudah dengan terhubungnya Git dan Github, dapat menambahkan isi dari Repository
+melalui lokal Git, kemudian mengubah, menambahkan workspace (branch) baru untuk development, hingga menyatukan
+kembali workspace (branch) menggunakan CLI dengan prompt "git <add>" hingga "git <merge> <branch>".
 
 ## Task 
 ### Membuat Repository Baru Github & Mini Project
-1. Membuat web site sesuai arahan pada task yang ada, yaitu membuat 3 buah page halaman, dimana tiap page atau halamanya berisikan beberapa konten, mencakup tag HTML yang disebutkan diatas tadi, serta kegunaanya masing - masing.
+1. Membuat Repository, kemudian master branch, development, development 1, hingga development 2 branch, dimana development
+branch akan di satukan dengan development 1, dan development 2, setelah melakukan perubahan pada masing"branch.
+
+Berikut kode hasil dari praktikum .
+[..]
+
+Berikut link Repository .
+https://github.com/Diopranata01/newPortof_Web / https://github.com/Diopranata01/newPortof_Web.git
 
 Hasil Task dapat dilihat pada .
-![Screenshot](./screenshot/index-html-screenshot.png)
-![Screenshot](./screenshot/form-html-screenshot.png)
-![Screenshot](./screenshot/welcome-html-screenshot.png)
+![Screenshot](./screenshot/Screen_Shot.jpeg)
+![Screenshot](./screenshot/Screen_Shot_2.jpeg)
