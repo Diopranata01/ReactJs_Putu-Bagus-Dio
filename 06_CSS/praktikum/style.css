@@ -20,6 +20,7 @@
     justify-content: center;
     text-align: center;
     color: #ffff;
+    font-family: 'Slabo 27px', serif;;
 }
 .box .box2{
     width: 100px;
@@ -44,4 +45,7 @@
     margin-top: 40px;
     display: block;
     border-radius: 20px;
+}
+.box3 p{
+    padding-left: 15px;
 }
