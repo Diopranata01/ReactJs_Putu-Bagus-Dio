@@ -17,5 +17,5 @@ Pada materi ini, mempelajari tentang beberapa hal berikut :
 2. Buatlah sebuah file dengan nama file2.html dengan desain seperti berikut, dibagian header kalian diberi kebebasan untuk memperbaiki bentuk dan responsive, dengan konten yang terdapat masih tetap sama.
 
 Hasil Task dapat dilihat pada .
-![Screenshot](./screenshot/file1.html_Screenshot.png.png)
+![Screenshot](./screenshot/file1.html_Screenshot.png)
 ![Screenshot](./screenshot/file2.html_Screenshot.png)
