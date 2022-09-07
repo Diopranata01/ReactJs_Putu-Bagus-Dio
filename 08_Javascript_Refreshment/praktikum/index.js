@@ -6,7 +6,7 @@ let terdaftar = "false";
 let lengkap_arr = [a, b, nama, terdaftar];
 
 function perkenalan (){
-    /* Let asal bersifat function scooping, jadikan global var */
+    /* Let asal bersifat function scooping, untuk line 31 harus di panggil functionya */
     let asal = "indonesia"
     return console.log(
         "perkenalkan nama saya" +
