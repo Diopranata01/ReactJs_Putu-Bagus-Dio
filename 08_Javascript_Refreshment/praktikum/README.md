@@ -43,10 +43,17 @@ c. Bisa, dikarenakan menghalangi jalanya eksekusi dari program itu sendiri, deng
 
 3. Dengan desctructuring array, variabel foo dengan array Budi, Sita, Ayu string, akan dipisahkan menjadi beberapa variabel dimana Budi pada let a, Sita Let b,  Ayu Let c.
 
+![Screenshot](./screenshot/3_Screenshot.png)
+
 4. Pada soal, perubahan pada string khususnya tanda '-', menggunakan yang namanya method yaitu string_Split, dengan variabel Let new_bdays, bdays akan di map erlebih dahulu, kemudian setiap index pada bday akan dipisahkan pada first dan last variabel di setiap tanda '-', kemudian di ganikan menggunakan rerturn `${first} / ${last}`, dan tanda '-' akan terganti '/'.
+
+![Screenshot](./screenshot/4_Screenshot.png)
 
 5. Soal nomor 5, akan menggunakan method Map, dimana tiap elemnt index array akan di duplikat kemudian di * kali kan 2 masing - masing, sehingga menghasulkan array [2,4,6,8,10,12].
 
+![Screenshot](./screenshot/5_Screenshot.png)
+
 6. Mirip seperti nomor 5, dimana penggunaan method Matchceil(), untuk merubah sebuah angka menuju bilangan bulatnya terdekat dan lebih besar, penggunaan nya hampir mirip secara keseluruhan seperti sebelumnya, tetapi untuk map tiap index array tidak akan dikali 2 seperti sebelumnya, akan dilakukan method Math.ceil() pada element yang di map, kemudian tampilkan dengan console.log.
 
+![Screenshot](./screenshot/6_Screenshot.png)
 
