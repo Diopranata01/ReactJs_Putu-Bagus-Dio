@@ -48,7 +48,7 @@ console.log(newUser_Service.introduction())
 
 //Soal 2
 
-class kendaraan {
+/* class kendaraan {
     constructor(totalroda, kecepatanperjam){
         this.totalroda = 0
         this.kecepatanperjam = 0
@@ -63,16 +63,15 @@ class mobil extends kendaraan{
 
     tambahkecepatan(berjalan)
 
-    /* berjalan(){
+    berjalan(){
         return tambahkecepatan(10)
     }
 
     tambahkecepatan(kecepatanbaru){
         kecepatanperjam = kecepatanperjam + kecepatanbaru
-    } */
-}
-
-console.log(berjalan)
+    }*/
+/* 
+console.log(berjalan) */
 
    /*  mobilcepat = new mobil()
     mobilcepat.berjalan()

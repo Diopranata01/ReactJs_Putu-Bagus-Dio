@@ -6,7 +6,7 @@ Pada materi ini, mempelajari tentang beberapa hal berikut :
 2. Beberapa hal tentang Js seperti Variabel, Method, Destrcuturing, Spread sheet, dan lain - lain
 3. Penting untuk tetap membedakan scoop dari sebuah code, global, function.
 
-### Bootstrap
+### Javascript
 1. Pada materi Javascript Refreshment kali ini, saya kembali mempelajari Js mulai dari bagaimana tipe - tipe yang ada, mengenal variabel dimana ES5 terdapat Let, dan ES6 terapat Const, memiliki masing - masing fungsi, diluar fungsi dan method yang ada.
 
 2. Destructuring sebuah array ataupun object sangat diperlukan, dimana 2 hal ini dapat dikatakan memiliki struktur yang berbeda, baik hingga kedepan nantinya saat penggunaan React.
