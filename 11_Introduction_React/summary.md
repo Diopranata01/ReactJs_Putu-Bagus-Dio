@@ -20,6 +20,7 @@ dalam file tersebut akan mereturn sebuah value dari function, kemudian komponen 
 dengan menulisakan nama komponen tersebut didalam code yang dituju.
 
 ## Task 
-
+1. Buatlah sebuah project react Baru.
+2. Buatlah sebuah file baru pada react, yang bernama home.js. Memasukan halaman home.html ke dalam home.js, Sehingga ketika kalian membuat react pada home tampilannya akan mirip dengan home.html( Kalian juga perlu untuk memasukan css dan asset yang kalian pakai.)
 Hasil Task dapat dilihat pada .
 ![Screenshot](./screenshot/2_About_React%20App.png)
