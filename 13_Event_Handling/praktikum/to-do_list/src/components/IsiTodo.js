@@ -3,13 +3,13 @@ import { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { FormGroup, Input, Label } from 'reactstrap';
 import { 
-    faCheck, faPen, faTrashCan
+    faPen
  } from '@fortawesome/free-solid-svg-icons'
 
 const IsiTodo = () => {
     
     const [toDo, setToDo] = useState([
-        {id : 1, title : "Mengerjakan Excercise", status : true},
+        {id : 1, title : "Mengerjakan Excercise", status : false},
         {id : 2, title : "Mengerjakan Assignment", status : false}
 
     ])
@@ -30,13 +30,20 @@ const IsiTodo = () => {
     }
 
     //DeleteTask
-    const deleteTask = () => {
-
+    const deleteTask = (id) => {
+        let newTask = toDo.filter(task => task.id != id)
+        setToDo (newTask);
     }
 
     //MarkerDone
     const markDoneTask = (id) => {
-
+        let newTask = toDo.map(task => {
+            if(task.id === id){
+                return ({...task, status: !task.status})//change index value opposite
+            }
+            return task;
+        })
+        setToDo(newTask)
     }
 
     //UpdateTask
@@ -60,21 +67,26 @@ const IsiTodo = () => {
          <div className="body">
             <div>
 
-                <div className="row row-form ">
+                <div className="row row-form justify-content-between">
                     <div className="col-10">
-                        <input
+                        <Input
                         value={newTask}
-                        onChange={ (element) => setNewTask (element.target.value)}//assign setNewTask while typing, before submited newTask
-                        className="form-control form-control-md"/>
+                        onChange={ (e) => setNewTask (e.target.value)}//assign setNewTask while typing, before submited newTask
+                        className="form-control form-control-md border-0"
+                        placeholder="Add todo..."
+                        />
                     </div>
                     <div className="col-1">
-                        <button onClick={addTask} className="btn btn-primary">Submit</button>
+                        <button onClick={addTask} className="btn">Submit</button>
                     </div>
                     
                 </div>
-
-                {/* check isi  */}
-                {toDo != toDo.length ? '': <p> <br/><br/>Belum ada Task ... </p>}
+                
+                {/* 
+                **Tampilan**
+                *check isi*  
+                */}
+                {toDo !== toDo.length ? '': <p> <br/><br/>Belum ada Task ... </p>}
 
                 {/* <FormGroup switch>
                     <Input
@@ -92,10 +104,37 @@ const IsiTodo = () => {
                         return(
                             <React.Fragment key={task.id}>{/* <= keyprops */}
                             <div className="col taskDecor border-top-0 border-bottom">
-                                <div className={task.status? 'done fst-italic' : 'not-done'}>
-                                   <span className="taskIndex">{index + 1 +'. '}</span> 
-                                   <span className="taskText">{task.title}</span>
-                                </div>
+                                    <Input type="checkbox" //checklist to define changes in status:id 
+                                        onClick={()=>markDoneTask(task.id)}
+                                        className="check-box"
+                                    />
+                                   <div className={task.status? 'done fst-italic' : 'not-done'}>
+                                      <span className="taskIndex">{index + 1 +'. '}</span> 
+                                      <span className="taskText">{task.title}</span>
+                                   </div>
+                                   {task.status ? null : (
+                                   <span title="Edit"
+                                   /* onClick={() => setUpdateData({
+                                    id: task.id,
+                                    title:task.title,
+                                    status: task.status ? true : false
+                                   })} */
+                                   >
+                                    <FontAwesomeIcon icon={faPen}
+                                    className="penIcon"
+                                    />
+                                   </span>
+                                   )}
+                                   <div className="wrapDelete">
+                                       <button 
+                                       title="deleteBtn"
+                                       onClick={()=>deleteTask(task.id)}//trf params
+                                       value= "Delete"
+                                       className="btn btn-light"
+                                       >
+                                           <p>Delete</p>
+                                       </button>
+                                   </div>
                             </div>
                             </React.Fragment>
                         )
