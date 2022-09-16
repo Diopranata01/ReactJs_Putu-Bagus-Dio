@@ -1,0 +1,42 @@
+body{
+  background-color: #333;/* Black Theme*/
+  color: white;
+}
+
+.App {
+  text-align: center;
+}
+
+header h1{
+  margin: 50px 10px;
+  margin-bottom: 80px;
+  font-size: 80px;
+}
+
+.row-form , .taskDecor{
+  margin: 20px 30vw;
+}
+
+.row-form {
+  display: flex;
+}
+
+.FormGroup{
+  margin: 20px 20px;
+}
+.taskDecor {
+  background-color: #333;
+  padding: 10px 20px;
+  text-align: left;
+  font-size: 18px;
+}
+
+.taskDecor .done .taskText{
+  text-decoration: line-through;
+  opacity: 1 px;
+}
+
+.taskIndex{
+  color: rgb(138, 138, 138);
+}
+
