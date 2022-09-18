@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { FormGroup, Input, Label } from 'reactstrap';
+import { Alert, FormGroup, Input, Label } from 'reactstrap';
 import { 
     faPen
  } from '@fortawesome/free-solid-svg-icons'
@@ -25,13 +25,16 @@ const IsiTodo = () => {
             let newVar = toDo.length + 1;
             let newItems = {id : newVar, title : newTask, status:false}
             setToDo([...toDo, newItems])//new data insertion replace the ...toDo
-            setNewTask('')//empty temp
+            setNewTask('')//empty temp   
+        }else{
+            alert('Silahkan isi terlebih dahulu!')
         }
+        
     }
 
     //DeleteTask
     const deleteTask = (id) => {
-        let newTask = toDo.filter(task => task.id != id)
+        let newTask = toDo.filter(task => task.id !== id)
         setToDo (newTask);
     }
 
@@ -79,24 +82,18 @@ const IsiTodo = () => {
                     <div className="col-1">
                         <button onClick={addTask} className="btn">Submit</button>
                     </div>
-                    
                 </div>
+                {/* {addTask===undefined ? 
+                    <Alert color="primary">
+                        Hey!
+                    </Alert> : ''
+                }   */}
                 
                 {/* 
                 **Tampilan**
                 *check isi*  
                 */}
                 {toDo !== toDo.length ? '': <p> <br/><br/>Belum ada Task ... </p>}
-
-                {/* <FormGroup switch>
-                    <Input
-                      type="switch"
-                      checked={state}
-                      onClick={() => {
-                        setState(!state);
-                      }}
-                    /><Label check>Checked switch checkbox input</Label>
-                </FormGroup> */}
 
                 {toDo && toDo
                 //Map the task => toDo
