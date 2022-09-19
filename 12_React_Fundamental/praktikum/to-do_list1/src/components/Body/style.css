@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container1{
+    width: 200vw;
+}
+
+.col-4{
+    width: fit-content;
+    height: fit-content;
+    margin: 0px 5px;
+    padding: 10px 10px;
+}
+
+.col-4 .done .toDoText{
+    text-decoration: line-through;
+    opacity: 1px;
+}
+
+.border{
+    padding: 10px 10px;
+}
+
+.col-4 .toDoIndex ,.toDoText{
+    margin: 10px 3px;
+}
