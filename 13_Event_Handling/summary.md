@@ -9,7 +9,9 @@ Pada materi ini, mempelajari tentang beberapa hal berikut :
 ### Penjelasan
 1. Pada materi Event handling, sebuah state adalah data yang bersifat private, dari component, kemudian hanya digunakan dan tidak digunakan untuk componen lainnya selain state itu sendiri.
 
-2. 
+2. Penggunaan setState untuk modifikasi data, kemudian setiap modifikasi akan terjadi render ulang data dimana dapat digunakan didalam sebuah class.
+
+3. Perbedaan antara State dan Props, dimana sebuah state digunakan dalam class, kemudina bersifat asynchronous, di ubah menggunakan <this.>, sedangkan props adalah bersifa read-only, dan tidak dapat di modifikasi.
 
 ## Task 
 ### Buatlah daftar pekerjaan yang akan kamu kerjakan, dengan kriteria sebagai berikut :
