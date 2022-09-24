@@ -4,7 +4,7 @@ import './index.css'
 const IniFooter = () => {
   return (
     <>
-      <div className='footer col'>
+      <div className='footer'>
       <p>
         IniFooter
       </p>

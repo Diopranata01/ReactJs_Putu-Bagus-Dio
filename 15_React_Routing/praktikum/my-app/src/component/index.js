@@ -1,6 +1,7 @@
 import IniFooter from './Footer'
-import IniNavbar from './Nabar'
+import IniNavbar from './Navbar'
+import IniNavbar2 from './Navbar2'
 
 export{
-    IniFooter, IniNavbar
+    IniFooter, IniNavbar, IniNavbar2
 }

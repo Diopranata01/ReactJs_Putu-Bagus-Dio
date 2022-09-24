@@ -1,26 +1,23 @@
 import React from 'react'
 import './App.css'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import {
-  IniNavbar, IniFooter
-} from './component'
-import {
-  HomePage, AboutPage
+  HomePage, AboutPage, ErrPage
 } from './pages'
 
 function App() {
   return (
+    <BrowserRouter>
     <div className="App container">
-      <IniNavbar/>
       <div className='isiBody container'>
-        <br/><br/><br/><br/>
-          <header>
-              <h1>todos</h1>
-          </header>
-          <HomePage/>
-          {/* <AboutPage/> */}
-          <IniFooter/>
+        <Routes>
+          <Route path='/' element={<HomePage></HomePage>}></Route>
+          <Route path='about' element={<AboutPage></AboutPage>}></Route>
+          <Route path='*' element={<ErrPage/>}></Route>
+        </Routes>
       </div>
     </div>
+    </BrowserRouter>
   );
 }
 

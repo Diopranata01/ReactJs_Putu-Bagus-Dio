@@ -1,16 +1,16 @@
-body{
-    background-color: #333;/* Black Theme*/
-    color: white;
-  }
-  
   .App {
     text-align: center;
   }
-  
-  header h1{
+  header{
+    position: block;
+    display: flex;
+    margin-top: 30px;
+  }
+  .body h1{
     margin: 100px 10px;
     margin-bottom: 80px;
     font-size: 90px;
+    color: rgb(164, 164, 164);
   }
   
   .row-form , .taskDecor{
@@ -25,7 +25,7 @@ body{
     padding-right: 20PX;
     background-color: white;
     border-radius: 25px;
-    box-shadow: 2px 5px 5px red;
+    box-shadow: 2px 5px 5px #019090;
   }
   
   input:focus{
@@ -37,7 +37,7 @@ body{
   }
   
   .taskDecor {
-    background-color: #333;
+    background-color: rgb(255, 255, 255);
     padding: 5px 20px;
     text-align: left;
     font-size: 18px;
@@ -55,10 +55,6 @@ body{
     width: 300px;
   }
   
-  .taskIndex{
-    color: rgb(138, 138, 138);
-  }
-  
   .wrapDelete{
     position: relative;
     transform: translateY(-10%);
@@ -66,14 +62,17 @@ body{
   }
   
   .wrapDelete button{
-    height: 40px;
-    width: 40px;
+    height: 45px;
+    width: 45px;
     border-radius: 50%;
+    background-color: rgb(228, 228, 228);
   }
   
   .wrapDelete p{
-    padding-top: 4px;
-    padding-right: 40px;
-    transform: translateX(-25%);
+    color: black;
+    padding-top: 6px;
+    padding-right: 30px;
+    transform: translateX(-28%);
     font-size: 12px;
+    font-weight: 600;
   }
