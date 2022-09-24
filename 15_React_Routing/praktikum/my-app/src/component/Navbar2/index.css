@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header2 .navbar{
+    height: 100vh;
+    width: 15vw;
+}
+.header2 nav{
+    background-color: #019090; 
+}
+.header2 .navbar2{
+    margin-top: 105px;
+}
+.header2 .nav-item{
+    margin: 21px 0px;
+}

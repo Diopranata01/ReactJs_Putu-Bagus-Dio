@@ -29,7 +29,7 @@ const IniNavbar = () => {
                         <FontAwesomeIcon icon={faXmark} className="fa-2xl"/>
                     </div>
                     {/* <FontAwesomeIcon icon={faXmark} onClick={hideMenu()}/> */}
-                    <li className="nav-item">
+                    <li className="nav-item nav1">
                         <Link className="nav-link active" aria-current="page" to="/">
                         Home
                         </Link>

@@ -1,23 +1,34 @@
 import React from "react";
-import { Link, useRouteMatch } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./index.css";
 
 const IniNavbar2 = () => {
   return (
-    <>
+    <>  
+          <div className="header2">
             <nav className="navbar navbar-expand-lg navbar-dark">
-                <div className="container-fluid">
+                <div className="container-fluid container2">
                 <div className="collapse navbar-collapse" id="navbarNav">
-                    <ul className="navbar-nav">
+                    <ul className="navbar-nav navbar2">
                     {/* <FontAwesomeIcon icon={faXmark} onClick={hideMenu()}/> */}
-                    <li className="nav-item">
+                    <li className="nav-item nav1">
                         <Link className="nav-link active" aria-current="page" to="/">
                         Home
                         </Link>
                     </li>
-                    <li className="nav-item">
-                        <Link className="nav-link active" to="/about">
-                        About
+                    <li className="nav-item nav2">
+                        <Link className="nav-link active" to="/about/about-app">
+                        About App
+                        </Link>
+                    </li>
+                    <li className="nav-item nav2">
+                        <Link className="nav-link active" to="/about/about-author">
+                        About Author
+                        </Link>
+                    </li>
+                    <li className="nav-item nav2">
+                        <Link className="nav-link active" to="/about/about-author">
+                        About Author
                         </Link>
                     </li>
                     {/* <li className="nav-item">
@@ -27,6 +38,7 @@ const IniNavbar2 = () => {
                 </div>
                 </div>
             </nav>
+          </div>
             
     </>
   );

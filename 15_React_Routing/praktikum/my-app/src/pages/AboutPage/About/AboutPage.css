@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.componen{
+    display: flex;
+}
+.aboutpage{
+    display: flex;
+    width: 100%;
+}
+.aboutpage .row{
+    width: 100%;
+}
+.aboutpage .col-8{
+    width: 100%;
+    height: 100%;
+    text-align: start;
+    padding: 0px 2vw;
+    padding-top: 55px;
+}
+.aboutpage .col-8 h1, .col-8 p{
+    margin: 0px 55px;
+    margin-top: 40px;
+}
+
+/* 
+.aboutpage .col-4{
+    width: inherit;
+    text-align: start;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(19, 16, 12);
+} */

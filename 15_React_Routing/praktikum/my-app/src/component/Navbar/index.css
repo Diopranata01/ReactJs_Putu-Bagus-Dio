@@ -34,10 +34,6 @@ nav{
     0%{ transform: rotate(0);}
     100%{ transform: rotate(360deg);}
 }
-
-.nav-btn{
-    padding: 5px 5px;
-}
 .navbar .nav-item{
     margin: 20px 0px;
 }
