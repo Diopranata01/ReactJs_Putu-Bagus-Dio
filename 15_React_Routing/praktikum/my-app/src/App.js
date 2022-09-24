@@ -7,7 +7,7 @@ import {
 
 function App() {
 
-  const shouldRedirect = false;
+  const shouldRedirect = true;
 
   return (
     <BrowserRouter>
