@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import "./index.css";
 
 const IniNavbar2 = () => {
@@ -27,8 +29,8 @@ const IniNavbar2 = () => {
                         </Link>
                     </li>
                     <li className="nav-item nav2">
-                        <Link className="nav-link active" to="/about/about-author">
-                        About Author
+                        <Link className="nav-link nav-link-btn active" to="/about/back">
+                            <FontAwesomeIcon icon={faArrowLeft} className="fa-2md"/> Go Back
                         </Link>
                     </li>
                     {/* <li className="nav-item">

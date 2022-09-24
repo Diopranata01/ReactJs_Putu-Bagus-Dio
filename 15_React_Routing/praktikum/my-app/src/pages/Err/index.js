@@ -2,7 +2,13 @@ import React from "react";
 
 const ErrPage = () => {
   return (
-    <div>
+    <div className="componen-err">
+      <header>
+
+      </header>
+      <div className="body">
+        
+      </div>
       <h1>ErrPage</h1>
     </div>
   );

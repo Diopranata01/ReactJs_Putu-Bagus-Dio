@@ -11,8 +11,29 @@
     background-color: #019090; 
 }
 .header2 .navbar2{
-    margin-top: 105px;
+    margin-top: 168px;
 }
 .header2 .nav-item{
     margin: 21px 0px;
 }
+
+/* icon toggled*/
+.nav-link-btn:hover{
+    animation-name: slidein;
+    animation-duration: 0.5s;
+    animation-iteration-count:initial;
+    animation-direction: alternate;
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 30%;
+      width: 100%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  

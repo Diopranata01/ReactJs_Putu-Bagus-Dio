@@ -5,6 +5,7 @@
 }
 .componen{
     display: flex;
+    padding-left: 8px;
 }
 .aboutpage{
     display: flex;

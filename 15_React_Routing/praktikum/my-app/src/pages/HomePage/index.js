@@ -1,10 +1,12 @@
 import React, { useEffect } from "react";
+import { useParams } from "react-router-dom";
 import { useState } from "react";
 import "./HomePage.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Alert, FormGroup, Input, Label } from "reactstrap";
 import { IniFooter, IniNavbar } from "../../component";
 import { faL, faPen } from "@fortawesome/free-solid-svg-icons";
+
 
 const HomePage = () => {
   const [toDo, setToDo] = useState([
@@ -65,11 +67,15 @@ const HomePage = () => {
   //ChangeTask
   const changeTask = (e) => {};
 
+  //useParams()
+/* const {uniqeId} = useParams(); */
+
   return (
     <>
       <header>
         <IniNavbar />
       </header>
+      {/* {useParams ? alert(`Oops.. youre going ${uniqeId}`): ''} */}
       <div className="body">
         <br />
         <h1>todos</h1>

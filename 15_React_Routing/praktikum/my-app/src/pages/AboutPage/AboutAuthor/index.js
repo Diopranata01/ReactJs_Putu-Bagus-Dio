@@ -5,7 +5,7 @@ import { IniFooter, IniNavbar2 } from "../../../component";
 const AboutAuthor = () => {
   return (
     <>
-      <div className="componen">
+      <div className="componen2">
         <div className="header-aboutauthor">
           <IniNavbar2 />
         </div>
