@@ -116,9 +116,8 @@ const HomePage = () => {
         )}
 
         {toDo &&
-          toDo
-            //Map the task => toDo
-            .map((task, index) => {
+          //Map the task => toDo
+          toDo.map((task, index) => {
               return (
                 <React.Fragment key={task.id}>
                   {/* <= keyprops */}
