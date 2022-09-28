@@ -24,7 +24,7 @@ const IsiTodo = () => {
         let baru = 3
         if(toDo.length === baru){
             alert('Terimakasih sudah mengisi! ^^')
-        }else if(toDo.length >= baru){
+        }else if(toDo.length  >= baru){
             alert('Terimakasih sudah mengisi! ^^')
         }
     }, [toDo])

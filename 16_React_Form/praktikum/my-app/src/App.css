@@ -1,0 +1,87 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Navbar */
+nav{
+  height: 100%;
+}
+.header .nav-btn {
+  visibility: visible;
+  opacity: 1;
+}
+/*  */
+.header{
+  /* background-color: rgb(21, 51, 51); */
+  padding: 40px 0px;
+  padding-bottom: 0px;
+  padding-left: 100px;
+}
+.header h1{
+  margin-left: 40px;
+}
+/*  */
+
+.header nav{
+  background-color: #019090;
+  position: fixed;
+  top: 0;
+  width: 15vw;
+  gap:  1.5rem;
+  transition: 0.6s;
+  transform: translateX(-150vh);
+}
+.header .res_nav , .header .nav-close-btn{
+  color: aliceblue;
+  transform: none;
+}
+.container-fluid{
+  margin-bottom: 73vh;
+}
+.navbar-nav{
+  display: block;
+  text-align: start;
+}
+textarea{
+  padding: 15px 0px;
+  padding-left: 21vw;
+  border-radius: 5px;
+}
+
+/* toggle btn icon */
+.nav-btn:hover{
+  animation-name: rotate;
+  animation-duration: 0.5s;
+}
+@keyframes rotate{
+  0%{ transform: rotate(0);}
+  100%{ transform: rotate(360deg);}
+}
+.navbar .nav-item{
+  margin: 20px 0px;
+}
+/* ---- */
+
+/* Main Content */
+.ini-form{
+  background-color: #36b8b8;
+  width: 100vw;
+  height: fit-content;
+}
+.body-iniform input{
+  padding: 3px 10vw;
+  margin: 10px 0px;
+  border-radius: 5px;
+}
+.body-iniform p{
+  margin-top: 5px;
+}
+.body-iniform label{
+  padding-left: 100px;
+}
+
+/* footer */
+.IniFooter-element{
+  background-color: grey;
+}
