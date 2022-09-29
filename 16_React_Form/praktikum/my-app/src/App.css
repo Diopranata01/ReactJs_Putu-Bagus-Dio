@@ -27,7 +27,7 @@ nav{
   background-color: #019090;
   position: fixed;
   top: 0;
-  width: 15vw;
+  width: 18.1vw;
   gap:  1.5rem;
   transition: 0.6s;
   transform: translateX(-150vh);
@@ -42,11 +42,6 @@ nav{
 .navbar-nav{
   display: block;
   text-align: start;
-}
-textarea{
-  padding: 15px 0px;
-  padding-left: 21vw;
-  border-radius: 5px;
 }
 
 /* toggle btn icon */
@@ -65,20 +60,66 @@ textarea{
 
 /* Main Content */
 .ini-form{
-  background-color: #36b8b8;
-  width: 100vw;
+  background-color: #5bd6d6;
+  width: 50vw;
   height: fit-content;
+  border-radius: 15px;
+  margin-bottom: 50px;
+  padding: 20px 0px;
 }
-.body-iniform input{
-  padding: 3px 10vw;
-  margin: 10px 0px;
+.body-iniform input[name="name"], [name="email"], [name="nomor"], [name="harapan"], [name="username"]{
+  width: 31vw;
+  margin: 20px 0px;
+  margin-bottom: 5px;
   border-radius: 5px;
+  border: none;
+}
+/* Hover */
+/* .body-iniform input[name="name"], [name="email"], [name="nomor"], [name="harapan"]:active{
+  border: 1px red;
+} */
+.body-iniform input[name="latbel"], [name="kelasCoding"], [name="file"]{
+  margin-bottom: 30px;
+}
+.body-iniform input[name="checkSetuju"]{
+  margin-bottom: 50px;
+}
+/* invalid require element */
+label span{
+  display: inline-block;
+  display: none;
+  width: 33vw;
+  margin: 10px 0px;
+  margin-top: 0%;
+  padding-bottom: 10px;
+  color: red;
+}
+input:invalid ~ span{
+  display: inline-block;
+}
+textarea{
+  border-radius: 5px;
+  padding: 5px 0px;
 }
 .body-iniform p{
   margin-top: 5px;
 }
 .body-iniform label{
-  padding-left: 100px;
+  padding-left: 10vw;
+}
+.body-iniform .checked-box{
+  display: flex;
+}
+.checked-box label{
+  padding-left: 15px;
+  padding-bottom: 14px;
+}
+.btn-form button{
+  border: none;
+  background-color: rgb(0, 112, 255);
+}
+.btn-form{
+  margin-left: 10vw;
 }
 
 /* footer */
