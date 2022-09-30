@@ -7,7 +7,6 @@ const IniForm = (props) => {
 
     const {newData, setNewData, Dataset} = props
 
-    const [errMassage, setErrmassage] = useState('')
     const inputFile = useRef(null)
 
    const patternReggex = '^[A-Za-z0-9]{4,15}$'
@@ -46,20 +45,24 @@ const IniForm = (props) => {
         console.log(newData)
 
         let deleteVar = {}
-        alert('Data Anda sudah terkirim!')
+        alert(`Data Pendaftar '${newData.name}' sudah terkirim!`)
         setNewData([
             ...newData, deleteVar
         ])
     }
     e.preventDefault();
+    
+}
 
-   }
+    const resetForm = (e) => {
 
-   const resetForm = () => {
-    if(newData.value)
-        console.log(newData)
+    e.preventDefault();
+    if(setNewData){
+        let newVar = {}
+
         alert('Data Anda sudah ter-reset')
-        setNewData('')
+        setNewData(newVar)
+    }
    }
     
   return (
@@ -76,7 +79,7 @@ const IniForm = (props) => {
                     <form onSubmit={submitHandler}>
                         <label>
                                 <p>Nama Lengkap</p>
-                                    <input name='name' placeholder=' Nama ' required pattern={uNameReggex} onChange={fungsiChange} className='mb-4'></input>
+                                    <input name='name' placeholder=' Nama ' value={newData.name} required pattern={uNameReggex} onChange={fungsiChange} className='mb-4'></input>
                                     <span>Nama harus merupakan huruf besar, dan kecil, sesuai nama lengkap!</span>
                                 <p>Username</p>
                                     <input name='username' placeholder=' Username ' value={newData.username} required pattern={patternReggex} onChange={fungsiChange} className='mb-4'></input>
@@ -85,7 +88,7 @@ const IniForm = (props) => {
                                     <input name='email' placeholder=' Email ' value={newData.email} type="email" required onChange={fungsiChange} className='mb-4'></input>
                                     <span>Email harus berupa email valid!</span>
                                 <p>No. Handphone</p>
-                                    <input name='nomor' placeholder=' Nomor Telp ' value={newData.nomor} required pattern={numberReggex} onChange={fungsiChange} className='mb-5'></input>
+                                    <input name='nomor' placeholder=' Nomor Telp ' value={newData.nomor} required pattern={numberReggex} onChange={fungsiChange} className='mb-4'></input>
                                     <span>Nomor handphone tidak boleh berupa karakter lain selain angka!</span>
                                 <p>Latar Belakang Pendidikan</p>
                                 {/* Radios not an controled componenta */}
@@ -112,8 +115,8 @@ const IniForm = (props) => {
                         </label>
                             <label>
                                 <button className='btn btn-primary'>Submit</button>
-                                <button className='btn btn-secondary ms-5' onClick={resetForm}>Reset</button>
                             </label>
+                                <button className='btn btn-secondary ms-5' onClick={resetForm}>Reset</button>
                     </form>
 
                     {/* {newData&&newData 
