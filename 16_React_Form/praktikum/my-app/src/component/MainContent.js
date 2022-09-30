@@ -15,7 +15,7 @@ const MainContent = () => {
   /* console.log(newData) */
   return (
     <>
-      <IniForm setNewData={setNewData} newData={newData}/>
+      <IniForm setNewData={setNewData} newData={newData} DataSet={DataSet}/>
       {/* {newData&&newData 
           .map((dataBaru)=> {
               let {name} = dataBaru;

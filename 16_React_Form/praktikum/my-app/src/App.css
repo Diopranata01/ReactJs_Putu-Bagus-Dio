@@ -85,9 +85,10 @@ nav{
   margin-bottom: 50px;
 }
 /* invalid require element */
-label span{
+span{
   display: inline-block;
   display: none;
+  font-size: 14px;
   width: 33vw;
   margin: 10px 0px;
   margin-top: 0%;
@@ -102,7 +103,7 @@ textarea{
   padding: 5px 0px;
 }
 .body-iniform p{
-  margin-top: 5px;
+  margin-top: 3px;
 }
 .body-iniform label{
   padding-left: 10vw;
@@ -114,15 +115,11 @@ textarea{
   padding-left: 15px;
   padding-bottom: 14px;
 }
-.btn-form button{
-  border: none;
-  background-color: rgb(0, 112, 255);
-}
 .btn-form{
   margin-left: 10vw;
 }
 
 /* footer */
 .IniFooter-element{
-  background-color: grey;
+  background-color: rgb(94, 94, 94);
 }
