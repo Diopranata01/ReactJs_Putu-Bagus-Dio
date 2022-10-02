@@ -55,14 +55,24 @@ const IniForm = (props) => {
 }
 
     const resetForm = (e) => {
-    if(setNewData){
-        
-        resetForm()
-        /* let newVar = {}
+        e.preventDefault()
+            if(setNewData){
 
-        alert('Data Anda sudah ter-reset')
-        setNewData(newVar) */
-    }
+                alert('Data Anda sudah ter-reset')
+                setNewData({
+                    ...newData, 
+                    id: 1,
+                    name : '',
+                    username : '',
+                    email : '',
+                    nomor : '',
+                    latbel : '',
+                    kelasCoding : '',
+                    file : '',
+                    harapan : '',
+                    checkSetuju : false
+                })
+            }
    }
     
   return (
