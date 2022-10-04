@@ -104,7 +104,8 @@ const IsiTodo = () => {
                 **Tampilan**
                 *check isi*  
                 */}
-                {toDo !== toDo.length ? '': <p> <br/><br/>Belum ada Task ... </p>}
+                {toDo && toDo.length ? '': <p> <br/><br/>Belum ada Task ... </p>}
+                {console.log(toDo.length)}
 
                 {toDo && toDo
                 //Map the task => toDo

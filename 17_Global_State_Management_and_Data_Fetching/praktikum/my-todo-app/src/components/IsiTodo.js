@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { hapusDaftar } from '../store/dataSlice';
+import { hapusDaftar, markerDone } from '../store/dataSlice';
 import { Input } from 'reactstrap';
 import initialValue from '../store/dataSlice';
 import InputUser from './InputUser'
@@ -72,7 +72,7 @@ const IsiTodo = () => {
                 < InputUser/>
 
                 {/* ---- */}
-                {/* {toDo !== toDo.length ? '': <p> <br/><br/>Belum ada Task ... </p>} */}
+                {jumlahData && jumlahData.length ? '': <p> <br/><br/>Belum ada Task ... </p>}
 
                 {
                     jumlahData.map ((task, index) => {
@@ -80,7 +80,7 @@ const IsiTodo = () => {
                             <div key={task.id}>
                             <div className="col taskDecor border-top-0 border-bottom">
                                     <Input type="checkbox" //checklist to define changes in status:id 
-                                        onClick={''}
+                                        onClick={()=>{dispatch(markerDone(task.id))}}
                                         className="check-box"
                                     />
                                    <div className={task.status? 'done fst-italic' : 'not-done'}>
