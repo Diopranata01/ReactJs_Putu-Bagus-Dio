@@ -31,6 +31,7 @@ export const dataSlice = createSlice({
                 if(task.id === action.payload){
                     return({...task, status: !task.status})
                 }
+                return task
             })
         }
         
