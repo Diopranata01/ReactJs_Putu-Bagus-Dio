@@ -13,10 +13,10 @@ export const dataSlice = createSlice({
     },
     reducers:{
         hapusDaftar: (state, action)=>{
-            state.dataValues = state.dataValues.filter((task)=>{
-                return task.id !== action.payload
-            })
-        },
+            let deleteTask = state.dataValues.filter((task=> task.id !== action.payload))
+            state.dataValues = deleteTask
+    
+    },
         tambahDaftar: (state, action) =>{
             if (state.dataValues){
                 let newVar = {

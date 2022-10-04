@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 import {Input} from 'reactstrap';
 import {tambahDaftar} from '../store/dataSlice'
 
-const InputUser = (props) => {
+const InputUser = () => {
 
     const dispatch = useDispatch()
     /* const {addTask} = props */
@@ -18,18 +18,21 @@ const InputUser = (props) => {
     const passSubmit = (e) =>{
         e.preventDefault()
 
-        const passData = {
-            title: newTask.title,
-            status: false
+        if(newTask.title){
+            const passData = {
+                title: newTask.title,
+                status: false
+            }
+            
+            dispatch(tambahDaftar(passData))
+        }else{
+            alert('Input kosong, isi terlebih dahulu!')
         }
-        
-        dispatch(tambahDaftar(passData))
         setNewTask({
             ...newTask,
             title : ''
         })
     }
-
     const onChange = (e) => {
         const { name, value} = e.target
         setNewTask({
