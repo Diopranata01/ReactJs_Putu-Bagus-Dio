@@ -37,21 +37,13 @@ const IsiTodo = () => {
     }
 
     //Markdone
-    async function checklistTodo(e, newId){
-        e.preventDefault();
-
-        if(toDo.completed === false){
-            await client.put('/update/false/'+newId);
-            alert('Berhasil Update Ke False!')
-
-        }else if(!toDo.completed){
-            await client.put('/update/true/'+newId);
-            alert('Berhasil Update Ke True!')
-        }
-
+    async function checklistTodo(id, completed){
+        
+        await client.put('/update/'+id,{
+            completed: !completed
+        })
         setLoading(true);
     }
-
 
     //Reload
     function setReload(newReload) {
@@ -90,8 +82,9 @@ const IsiTodo = () => {
                             <React.Fragment key={task.id}>{/* <= keyprops */}
                             <div className="col taskDecor border-top-0 border-bottom">
                                     <Input type="checkbox" //checklist to define changes in status:id 
-                                        onClick={ (e) => checklistTodo(e, task.id)}
-                                        className="check-box"
+                                        className="check-box" defaultChecked={task.completed}
+                                        onChange={() => checklistTodo( task.id, task.completed)}
+                                        /* onClick={ (e) => checklistTodo(e, task.id, task.completed)} */
                                     />
                                    <div className={task.completed? 'done fst-italic' : 'not-done'}>
                                       <span className="taskIndex">{index + 1 +'. '}</span> 
