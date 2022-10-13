@@ -11,6 +11,6 @@ Hal yang dicapai | Result | Type Test | Library |
 | Render APP sesuai |  |  |  |
 | URL sudah sesuai |  | Komponen | RTL, Jest |
 | Tampilan Visual pada web dan mobile |  |  |  |
-| Performa | sudah | Komponen | RTL, Jest |
+| Performa |  | Komponen | RTL, Jest |
 | App secure(?) |  |  |  |
 | ? |  |  |  |
