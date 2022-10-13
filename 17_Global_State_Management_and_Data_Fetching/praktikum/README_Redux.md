@@ -18,5 +18,5 @@
 
 
 ## Berikut hasil dari source code tersebut. 
-![Screenshot](./Screenshot_1.png)
-![Screenshot](./Screenshot_2.png)
+![Screenshot](../screenshot/Screenshot_redux_1.png)
+![Screenshot](../screenshot/Screenshot_redux_2.png)
