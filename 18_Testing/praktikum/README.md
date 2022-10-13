@@ -2,7 +2,7 @@
 
 ## Goals
 
-### :pizza: Test PLan
+### :pen: Test PLan
 ********
 
 Hal yang dicapai | Result | Type Test | Library |
