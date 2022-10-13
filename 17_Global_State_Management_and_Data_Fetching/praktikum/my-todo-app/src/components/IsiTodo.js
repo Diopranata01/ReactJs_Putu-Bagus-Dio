@@ -81,6 +81,7 @@ const IsiTodo = () => {
                             <div className="col taskDecor border-top-0 border-bottom">
                                     <Input type="checkbox" //checklist to define changes in status:id 
                                         onClick={()=>{dispatch(markerDone(task.id))}}
+                                        checked={task.status}
                                         className="check-box"
                                     />
                                    <div className={task.status? 'done fst-italic' : 'not-done'}>
