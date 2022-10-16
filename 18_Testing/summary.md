@@ -1,9 +1,8 @@
-<<<<<<< HEAD
-#Saya_Putu-Bagus-Dio
+# React Testing
 
-Halo
-=======
-#Saya_Putu-Bagus-Dio
-
-Halo
->>>>>>> 474cb2b56d69e9ddb845cbe873bdfbfe8c2aaad5
+### Hasil Task dapat dilihat pada .
+![Screenshot](./screenshot/Screenshot_UnitTesting_Workspace.png)
+![Screenshot](./screenshot/Screenshot_UnitTesting_Result.png)
+![Screenshot](./screenshot/Screenshot_UnitTesting_1.png)
+![Screenshot](./screenshot/Screenshot_UnitTesting_2.png)
+![Screenshot](./screenshot/Screenshot_UnitTesting_3.png)
