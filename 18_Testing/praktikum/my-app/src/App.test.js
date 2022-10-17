@@ -5,7 +5,7 @@ import userEvent from '@testing-library/user-event';
 import NameForm from './FormCoding';
 
 // element test nameform
-describe('App', () => { 
+describe('-App', () => { 
   test('get element Pendaftaran Peserta Coding Bootcamp test', ()=> {
       render(<NameForm/>)
       const newTest = screen.getByText('Pendaftaran Peserta Coding Bootcamp')
@@ -110,9 +110,16 @@ describe('App', () => {
 *
 */
 
-describe('UseInputValue', () => { 
+describe('-UseInputValueHookTest', () => { 
 test('Hooks Test', ()=> {
       const { result } = renderHook(()=> useInputValue('NewValue'));
       expect(result.current.value).toEqual('NewValue')
   })
  })
+
+// describe('-FormCodingHookTest', () => { 
+// test('Hooks Test', ()=> {
+//       const { result } = renderHook(()=> useInputValue());
+//       expect(typeof result.current.value).toBe('function')
+//   })
+//  })
