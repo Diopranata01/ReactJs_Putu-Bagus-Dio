@@ -76,6 +76,7 @@ export default function NameForm() {
         Nama Lengkap:
         <input
           required
+          placeholder='input-nama'
           className={styles.input}
           type="text"
           name="nama"
@@ -99,6 +100,7 @@ export default function NameForm() {
         No Handphone: <br/>
         <input
           type="number"
+          placeholder='input-hp'
           name="noHandphone"
           value={data.noHandphone}
           onChange={handleChange}

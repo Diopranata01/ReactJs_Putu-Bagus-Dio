@@ -1,8 +1,20 @@
-import { render, screen } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 import { renderHook } from '@testing-library/react-hooks';
 import {useInputValue} from './useInputValue';
 import userEvent from '@testing-library/user-event';
 import NameForm from './FormCoding';
+import Search from './Search';
+
+jest.mock("axios", ()=>({
+
+  __esModule: true,
+
+  default:{
+    get: ()=>{
+      data: {}
+    }
+  }
+}))
 
 // element test nameform
 describe('-App', () => { 
@@ -24,6 +36,46 @@ describe('-App', () => {
     render(<NameForm/>)
     const newTest = screen.getAllByRole('textbox')
     expect(newTest.length).toEqual(3);
+})
+
+   // Form Input Text Should be empty
+   test('Form Input Text Should be Empty', ()=> {
+    render(<NameForm/>)
+    const newTest = screen.getByPlaceholderText('input-nama')
+    const testInput ={ nama: ''}//di set '' agar empty
+
+    fireEvent.change(newTest, {target: {value: testInput.nama}});
+    expect(newTest.value).toBe(testInput.nama);
+})
+
+   // Form Input Text Should be change
+   test('Form Input Text Should be Empty', ()=> {
+    render(<NameForm/>)
+    const newTest = screen.getByPlaceholderText('input-nama')
+    const testInput ={ nama: 'namaBaru'}
+
+    fireEvent.change(newTest, {target: {value: testInput.nama}});
+    expect(newTest.value).toBe(testInput.nama);
+})
+
+   // Form Input Text Nomor Should be empty
+   test('Form Input Text Should be Empty', ()=> {
+    render(<NameForm/>)
+    const newTest = screen.getByPlaceholderText('input-nama')
+    const testInput ={ noHp: ''}//di set '' agar empty
+
+    fireEvent.change(newTest, {target: {value: testInput.noHp}});
+    expect(newTest.value).toBe(testInput.noHp);
+})
+
+   // Form Input Nomor Hp Should be change
+   test('Form Input Text Should be Empty', ()=> {
+    render(<NameForm/>)
+    const newTest = screen.getByPlaceholderText('input-nama')
+    const testInput ={ noHp: 'noHpBaru'}
+
+    fireEvent.change(newTest, {target: {value: testInput.noHp}});
+    expect(newTest.value).toBe(testInput.noHp);
 })
 
   // Form Input Email Render
@@ -75,7 +127,7 @@ describe('-App', () => {
 })
 
   // Form Reset Button
-  test('Render Submit Button', ()=> {
+  test('Render Reset Button', ()=> {
     render(<NameForm/>)
     const newTest = screen.getByText('Reset')
     expect(newTest).toBeInTheDocument();
@@ -87,18 +139,6 @@ describe('-App', () => {
     const errMassage = screen.queryByTestId('error-form')
     expect(errMassage).not.toBeInTheDocument();
 })
-
-  // Form Input Showing Err Massage
-  // test('Render Input Valid Email Element ', ()=> {
-  //   render(<NameForm/>)
-  //   const newEmail = screen.getByTestId('email-form')
-  //   const errMassage = screen.queryByTestId('error-form')
-
-  //   userEvent.type(newEmail, 'different@mail.com')//user input schema
-
-  //   expect(newEmail).not.toHaveValue('newEmail@mail.com');//valid email input
-  //   expect(errMassage).toBeInTheDocument();//err massage show
-  // })
   
  })
 
@@ -117,9 +157,11 @@ test('Hooks Test', ()=> {
   })
  })
 
-// describe('-FormCodingHookTest', () => { 
-// test('Hooks Test', ()=> {
-//       const { result } = renderHook(()=> useInputValue());
-//       expect(typeof result.current.value).toBe('function')
-//   })
-//  })
+describe('-FormCodingHookTest', () => { 
+test('Fetching Loading Test', async ()=> {
+    render(<Search/>)
+      const loading = screen.getByPlaceholderText('result-data')
+
+      expect(loading).not.toHaveTextContent(/Loading.../)
+  })
+ })
