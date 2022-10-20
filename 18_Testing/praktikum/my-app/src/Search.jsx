@@ -35,7 +35,14 @@ export default function Search() {
       {error && <span>Ada yang error ...</span>}
 
       {stories.length > 0 && "Daftar Cerita"}
-      {/* untuk reload page, berikan loading dahulu */}
+
+      {
+     /* untuk reload page, berikan loading dahulu
+      *
+      * saya ubah sedikit agar bisa di test Fetch API nya
+      * 
+      */}
+
       <div className="div" placeholder='result-data'>
         {dataAcc ? 
         <ul>
