@@ -1,5 +1,5 @@
-<<<<<<< HEAD
-#praktikum_Putu-Bagus-Dio
-=======
-#praktikum_Putu-Bagus-Dio
->>>>>>> 474cb2b56d69e9ddb845cbe873bdfbfe8c2aaad5
+## Deploy App
+
+#### via Netlify
+
+link : https://63513ee91868752afb8ed2ea--alterra-reactjs-bagusdio.netlify.app/
