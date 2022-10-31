@@ -1,0 +1,4 @@
+{
+    "query": "query { kampus_merdeka_keterangan(where: {status: {_eq: true}}) { id id_anggota nilai pelajaran status }",
+    "variables": {}
+}
