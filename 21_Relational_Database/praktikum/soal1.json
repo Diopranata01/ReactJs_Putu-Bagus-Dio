@@ -1,0 +1,4 @@
+{
+    "query": "query{ kampus_merdeka_keterangan(where: {id_anggota: {_eq: 1}}){ id_anggota one_to_one_anggota {nama} }",
+      "variables": {}
+}
