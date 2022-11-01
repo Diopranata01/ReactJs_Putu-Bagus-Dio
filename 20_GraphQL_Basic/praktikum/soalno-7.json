@@ -1,23 +1,29 @@
 {
-    "query": "mutation($objects: [kampus_merdeka_keterangan_insert_input!] = {}) [ { insert)kampus_merdeka_keterangan(objects: $objects){ returning { id } } }",
-    "variables": {
-        
-        "objects": {
-          "id_anggota": 3,
-          "pelajaran": "Sistem Informasi",
-          "nilai": 90,
-          "status": true
-        }
-      },
-
-      "query2": "mutation($objects: [kampus_merdeka_keterangan_insert_input!] = {}) [ { insert)kampus_merdeka_keterangan(objects: $objects){ returning { id } } }",
-      "variables2": {
-        
-        "objects": {
-          "id_anggota": 3,
-          "pelajaran": "React",
-          "nilai": 55,
-          "status": false
-        }
-      }
+  "query": "mutation($objects: [kampus_merdeka_keterangan_insert_input!] = {}) [ { insert)kampus_merdeka_keterangan(objects: $objects){ returning { id } } }",
+  "variables": {
+    "objects": {
+      "id_anggota": 3,
+      "pelajaran": "Sistem Informasi",
+      "nilai": 90,
+      "status": true
+    }
+  },
+  "query2": "mutation($objects: [kampus_merdeka_keterangan_insert_input!] = {}) [ { insert)kampus_merdeka_keterangan(objects: $objects){ returning { id } } }",
+  "variables2": {
+    "objects": {
+      "id_anggota": 3,
+      "pelajaran": "React",
+      "nilai": 55,
+      "status": false
+    }
+  },
+  "queryRelation": "mutation { insert_kampus_merdeka_keterangan(objects: {id_anggota: 3, nilai: 42, pelajaran: Sistem, status: false}, on_conflict: {constraint: keterangan_pkey, where: {one_to_one_anggota: {id: {_eq: 3}}}}) { returning { id_anggota nilai status pelajaran }}",
+  "variablesRelation": {
+    "objects": {
+      "id_anggota": 3,
+      "pelajaran": "React",
+      "nilai": 55,
+      "status": false
+    }
+  }
 }

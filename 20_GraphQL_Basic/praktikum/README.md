@@ -47,7 +47,7 @@
 
 1. Langkah awal dalam pembuatan database adalah masuk ke hasura, kemudian login, dan konek menuju heroku, dilanjutan dengan membuat project, dan masuk ke project tersebut, lalu cari menu data, jika ingin koneksi dengan database lain bisa, jika tidak pilih posgree untuk database. Dilanjutkan dengan create schema, didalamnya akan terdapat tabel yang ingin dibuat, klik create tabel, dan masukan input sesuai jenis nya, seperti int, text/string, boolean, dan tidak lupa primary key pada id atau field lain. Kemudian tambahkan foreign key jika terdapat tabel yang ingin di relasikan, dan relasi tabel dapat berupa one to many, atau many to many.
 
-2. Pada soal nomor 6, menggunakan query untuk menampilkan anggota atau siswa yang memiliki status true, jika terdapat status true pada tiap siswa, maka siswa tersebut akan dimunculkan, berupa id, nama, serta pelajaranya. Selanjutnya soal nomor 7, melakukan insert pada siswa yang bernama angga, dengan memasukan data menggunakan mutation insert pada keterangan, menyesuaikan anggota_id milik angga, karna relation tabel user dengan tabel keterangan ada pada id dan id_anggota.
+2. Pada soal nomor 6, menggunakan query untuk menampilkan anggota atau siswa yang memiliki status true, jika terdapat status true pada tiap siswa, maka siswa tersebut akan dimunculkan, berupa id, nama, serta pelajaranya. Selanjutnya soal nomor 7, melakukan insert pada siswa yang bernama angga, dengan memasukan data menggunakan mutation insert pada keterangan, menyesuaikan anggota_id milik angga, karna relation tabel user dengan tabel keterangan ada pada id dan id_anggota. Dan disini saya melakukan 2 cara, dan cara ke dua adalah dengan memasukan object seperti biasa menggunakan insert mutation, kemudian dengan constrain key, dimana one_to_one_anggota id = 3, yaitu id anggota dari angga, maka insert akan mengacu pada id anggota yang sudah di relasikan sebelumnya (one_to_one).
 
 3. Dan terakhir melakukan update menggunakan mutation, kemudian menggunakan status yang masih bersifat false akan diubah menjadi true, dan me-return id anggota, nilai, pelajaran, dan status.
 
@@ -57,4 +57,5 @@
 ![Screenshot](../screenshot/Screenshot-Soal-no.6(3).png)
 ![Screenshot](../screenshot/Screenshot-no.7.png)
 ![Screenshot](../screenshot/Screenshot-no.7(2).png)
+![Screenshot](../screenshot/Screenshot-no.7(3).png)
 ![Screenshot](../screenshot/Screenshot-no.8.png)
