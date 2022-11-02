@@ -10,7 +10,7 @@ const ListPassenger = (props) => {
 
     const { data, loading, error  } = useQuery(getListPassenger);
 
-    // const [loadingBar, setLoading] = useState('');
+    const [detail, setDetail] = useState('');
     
     if (loading) return 'Loading...';
     if (error) return `Error! ${error.message}`;
@@ -43,13 +43,13 @@ const ListPassenger = (props) => {
                     // </React.Fragment>
                 ))}
 
-                {dataDetail.map( item => (
+                {dataDetail.map((item) => (
                     <ListDetailPassenger
                        style={{ margin: '10px' }}
                         key={item.id}
                         data={item}
                     />
-                ))}
+                ))} 
                 
             </table>
         </div>

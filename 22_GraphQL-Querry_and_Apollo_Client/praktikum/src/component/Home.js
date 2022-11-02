@@ -28,6 +28,11 @@ class Home extends Component {
                     umur: '',
                     jenisKelamin: ''
                 },
+            ],
+            detail : [
+                {
+                    tampilDetail: false
+                }
             ]
         }
     }
@@ -54,8 +59,15 @@ class Home extends Component {
             data: [...this.state.data, newData]  
         });
 
+        // if(newData !== ''){
+            
+        //     const newDetail = {tampilDetail: true}
 
-        // console.log(data);
+        //     this.setState({
+        //         detail: [ ...this.state.detail, newDetail]
+        //     })
+        // }
+        // console.log(this.state.detail);
         
     };
     

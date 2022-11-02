@@ -13,18 +13,17 @@ const ListDetailPassenger = (props) => {
         <div>
             <table cellPadding="5px" cellSpacing="0" style={{margin: "auto"}}>
                 <thead bgcolor="red">
+                    <td>Id</td>
                     <td>Nama</td>
                     <td>Umur</td>
                     <td>Jenis Kelamin</td>
                     <td bgcolor="white" className="removeBorder"></td>
                 </thead>
-                
                     <td>{id}</td>
                     <td>{nama}</td>
                     <td>{umur}</td>
                     <td>{jenis_kelamin}</td>
                     <td bgcolor="white" className="removeBorder"></td>
-                
             </table>
         </div>
     )
