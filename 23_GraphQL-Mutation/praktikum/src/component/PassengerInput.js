@@ -1,24 +1,7 @@
 import { useState } from "react"
-import { gql, useMutation } from '@apollo/client';
 import "./Home.css"
 
-const InsertPassanger = gql`
-    mutation MyMutation($objects: [passenger_list_passenger_insert_input!] = {}) {
-    insert_passenger_list_passenger(objects: $objects) {
-      returning {
-        id
-        jenis_kelamin
-        nama
-        umur
-      }
-    }
-  }
-`;
-
 function PassengerInput(props) {
-
-  const [ListPassenger,{ data, loading, error}] = useMutation(InsertPassanger);
-
   const [state, setState] = useState({
     nama: "",
     umur: "",
@@ -79,9 +62,6 @@ function PassengerInput(props) {
   } else {
     editMode.display = "none"
   }
-
-  if (loading) return 'Loading...';
-  if (error) return `Error! ${error.message}`;
 
   return (
     <div>

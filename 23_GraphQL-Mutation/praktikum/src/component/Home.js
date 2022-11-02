@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from "uuid";
 import PassengerInput from './PassengerInput';
 import ListPassenger from './ListPassenger';
 import Header from './Header';
-import { gql, useMutation } from '@apollo/client';
+import { gql } from '@apollo/client';
 
 const GetListpassenger = gql`
     query MyQuery {
