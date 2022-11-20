@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo">Logo</a>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+    </header>
+    <section>
+        <img src="/img/1x/1x/Asset 12.svg" alt="" id="sun">
+        <img src="/img/1x/1x/Asset 13.svg" alt="" id="mountain_back">
+        <h2 id="text">Welcome To Our Website</h2>
+        <p id="text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quasi impedit qui consequuntur similique praesentium quos, nam in saepe veritatis dolores provident dolor a delectus tenetur veniam ipsam laudantium doloribus?</p>
+        <a href="#" id="btn">Join Now</a>
+        <img src="/img/1x/1x/Asset 11.svg" alt="" id="mountain_mid2">
+        <img src="/img/1x/1x/Asset 10.svg" alt="" id="mountain_mid1">
+    </section>
+    <div class="body-sec row-md-12 d-grid gap-3">
+        <div class="col p-5 d-grid gap-3 mb-5">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto culpa cumque mollitia, impedit adipisci animi molestias 
+                fugit odit maxime aliquid hic nam, deserunt exercitationem, quia est repudiandae saepe temporibus accusantium?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ea aliquam quae, perspiciatis, quaerat voluptas alias unde 
+                praesentium molestiae aliquid officia facilis? Consequatur, ipsam pariatur iure fuga veritatis molestias repudiandae.
+            </p>
+        </div>
+        <div class="col p-5 d-grid gap-3 mt-5 contact">
+            <div class="row align-items-center">
+                <div class="col">
+                    <h2>Contact Us</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto culpa cumque mollitia, </p>
+                </div>
+                <div class="col">
+                    <div class="row-md-12">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="inputEmail" class="form-email">Email</label>
+                                    <input type="email" class="form-control mb-4">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputEmail" class="form-email">Your Name</label>
+                                    <input type="email" class="form-control mb-4">
+                                </div>
+                            </div>
+                            <label for="inputText" class="form-email">Your Text Here</label>
+                            <textarea class="form-control"></textarea>
+                            <button type="submit" class="btn btn-dark mt-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send me-1" viewBox="0 0 16 16">
+                                    <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+                                </svg>
+                                Send
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col p-5 d-grid gap-3 mt-5 footer">
+            <div class="row align-items-center">
+                <div class="row align-items-start">
+                    <div class="col-md-3">
+                        <p>Join Corporation</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p>Contact Us</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p>Customer Service</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p>About Us</p>
+                    </div>
+                </div>
+                <div class="row align-items-start">
+                    <div class="col d-grid gap-2">
+                        <a href="https://www.instagram.com/diyoprnt/">instagram</a>
+                        <a href="https://github.com/Diopranata01?tab=repositories">github</a>
+                        <a href="https://www.facebook.com/dio.pranata.94/">facebook</a>
+                    </div>
+                    <div class="col d-grid gap-2">
+                        <a href="">contact us</a>
+                    </div>
+                    <div class="col d-grid gap-2">
+                        <a href="">call</a>
+                        <a href="">email</a>
+                    </div>
+                    <div class="col d-grid gap-2">
+                        <p>Our Company</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center"> &copy JoinCorp</div>
+        </div>
+    </div>
+    <script>
+        const sun = document.getElementById('sun');
+        const mountain_back = document.getElementById('mountain_back');
+        const mountain_mid2 = document.getElementById('mountain_mid2');
+        const mountain_mid1 = document.getElementById('mountain_mid1');
+        const text = document.getElementById('text');
+        const text2 = document.getElementById('text2');
+        const btn = document.getElementById('btn');
+        const header = document.getElementById('header');
+
+        window.addEventListener('scroll', function(){
+            const value = window.scrollY;
+            sun.style.left = value * .50 + 'px';
+            mountain_back.style.marginTop = value * 0.20 + 'px';
+            mountain_back.style.marginTop = value * 0.20 + 'px';
+            text.style.marginTop = value * 1 + 'px';
+            text2.style.marginTop = value * 1 + 'px';
+            btn.style.marginTop = value * 2 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
+</body>
+</html>

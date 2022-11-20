@@ -1,15 +1,14 @@
 import { createSlice } from '@reduxjs/toolkit'
+import { useState } from 'react'
 import {v4 as uuidv4} from 'uuid';
+import { initialValue } from '../data/index'
 
-const initialValue = [
-    {id : 1, title : "Mengerjakan Excercise", status : false},
-    {id : 2, title : "Mengerjakan Assignment", status : false}
-]
+const newValue = initialValue
 
 export const dataSlice = createSlice({
     name: "dataval",
     initialState: {
-        dataValues: initialValue
+        dataValues: newValue
     },
     reducers:{
         hapusDaftar: (state, action)=>{

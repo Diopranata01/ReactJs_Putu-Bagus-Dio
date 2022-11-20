@@ -12,57 +12,9 @@ import { useDispatch, useSelector } from "react-redux";
 
 const IsiTodo = () => {
     
-    /* //init State
-    const [toDo, setToDo] = useState(initialValue) */
 
     const jumlahData = useSelector((state)=> state.dataval.dataValues)
     const dispatch = useDispatch()
-
-    /* //Algorithm still not found --
-    useEffect(()=>{
-        let baru = 3
-        if(toDo.length === baru){
-            alert('Terimakasih sudah mengisi! ^^')
-        }else if(toDo.length >= baru){
-            alert('Terimakasih sudah mengisi! ^^')
-        }
-    }, [toDo]) */
-
-    /* //AddTask
-    const addTask = (newPass) => {
-        if(toDo){
-            let newVar = {
-                id: uuidv4(),
-                ...newPass,
-            }
-            setToDo([...toDo, newVar])
-            console.log(toDo)
-        }else{
-            alert('Silahkan isi terlebih dahulu!')
-        }
-    } */
-    //Liat di video excercise, -5:42, sama excercise hook -14:35
-
-    /* //DeleteTask
-    const deleteTask = (id) => {
-        let newTask = toDo.filter(task => task.id !== id)
-        setToDo (newTask);
-    } */
-
-    /* //MarkerDone
-    const markDoneTask = (id) => {
-        let newTask = toDo.map(task => {
-            if(task.id === id){
-                return ({...task, status: !task.status})//change index value opposite
-            }
-            return task;
-        })
-        setToDo(newTask)
-    } */
-
-    /* const passFunction = (e) =>{
-        dispatch(hapusDaftar(e))
-    } */
        
     return (
         <>
